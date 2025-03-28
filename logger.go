@@ -61,5 +61,5 @@ func Info(msg string, args ...any) {
 
 func Error(msg string, args ...any) {
 	msg = appendNewLine(msg)
-	log.Fatalf("[Error] "+msg, args...)
+	log.Printf("[Error] "+msg, args...)
 }
