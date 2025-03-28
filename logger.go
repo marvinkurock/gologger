@@ -63,3 +63,8 @@ func Error(msg string, args ...any) {
 	msg = appendNewLine(msg)
 	log.Printf("[Error] "+msg, args...)
 }
+
+func Fatal(msg string, args ...any) {
+	msg = appendNewLine(msg)
+	log.Fatalf("[Fatal] "+msg, args...)
+}
